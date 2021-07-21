@@ -1,0 +1,222 @@
+/* Eric Meyer's CSS Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+	background-color: #f0f2fa;
+}
+
+svg {
+    width: 20px;
+    height: 20px;
+    fill: #fff;
+}
+
+img {
+	width:100%;
+	max-width: 100%;
+}
+
+:root {
+	--white: #ffffff;
+	--primary: #222235;
+	--bg: #161624;
+	--red: #ff0000;
+	--green: #016F42;
+}
+
+.container {
+	width: 80%;
+	max-width: 1170px;
+	margin: auto;
+}
+
+.section__title {
+	font-size: 24px;
+	font-weight: 600;
+	
+	color: var(--primary);
+}
+
+.header {
+	padding: 20px 0;
+
+	background-color: var(--bg);
+}
+
+.header__interface {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.header__logo {
+	display: flex;
+	align-items: center;
+
+	text-decoration: none;
+	color: var(--white);
+}
+
+.logo {
+	max-width:50px;
+}
+
+.header__logo--text {
+	display: block;
+
+	margin-left: 20px;
+}
+
+.header__nav {
+	display: flex;
+	align-items: center;
+}
+
+.header__nav .btn:last-of-type {
+	margin-left: 20px;
+}
+
+.btn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	padding: 9px 25px;
+
+	font-size: 14px;
+	font-weight: 400;
+
+	border: 1px solid transparent;
+	outline: none;
+	cursor: pointer;
+	transition: .3s ease;
+	-webkit-transition: .3s ease;
+	-moz-transition: .3s ease;
+	-ms-transition: .3s ease;
+	-o-transition: .3s ease;
+}
+
+.btn__primary {
+	background-color: var(--primary);
+	color: var(--white);
+}
+
+.btn__primary:hover {
+	background-color: var(--white);
+	border: 1px solid var(--white);
+	color: var(--primary);
+}
+
+.btn__secondary {
+	border: 1px solid var(--white);
+	background-color: transparent;
+	color: var(--white);
+}
+
+.btn__secondary:hover {
+	background-color: var(--primary);
+	border: 1px solid transparent;
+}
+
+.statistics {
+	margin-top: 20px;
+}
+
+.table__wrapper {
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+
+	margin-top: 20px;
+}
+
+.table {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	max-width: 290px;
+	width: 100%;
+}
+
+.table__result,
+.table__name {
+	padding: 15px 0
+}
+
+.table__name {
+	width: 100%;
+
+	text-align: center;
+	background-color: var(--primary);
+	color: var(--white);
+}
+
+.table__result {
+	width: 100%;
+
+	text-align: center;
+	background-color: var(--white);
+}
+
+.statistics__result--block {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	margin-top: 30px;
+}
+
+.statistics__result--error,
+.statistics__result--time {
+	display: flex;
+	align-items: flex-end;
+
+	font-size: 16px;
+	font-weight: 600;
+}
+
+.statistics__result--error {
+	color: var(--red);
+}
+
+.statistics__result--time {
+	color: var(--green);
+}
+
+.statistics__result--error span,
+.statistics__result--time span {
+	display: block;
+}
+
+.statistics__result--error-count,
+.statistics__result--time-count {
+	margin-left: 15px;
+
+	font-size: 18px;
+}
